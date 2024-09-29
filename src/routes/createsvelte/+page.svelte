@@ -9,26 +9,31 @@
     <Highlight
         language={bash}
         code={`npm create vite
-# majd: Projeknév megadása, Svelte választása`}
+# majd: Projeknév megadása (myproject), Svelte választása, JavaScript választása
+cd myproject #projekt könyvtár kiválasztása
+npm i #függőségek telepítése
+code . #vscode elindítása`}
     ></Highlight>
     <div class="p">Config beállítása (GitHub Deploy-hoz)</div>
     <br />
     <div class="code">
-        <Highlight
-            language={javascript}
-            code={`//vite.config.js:
+        <div class="codein">
+            <Highlight
+                language={javascript}
+                code={`//vite.config.js:
 export default defineConfig({
     plugins: [svelte()],
-    base: '/Projeknév/',
+    base: '/myproject/',
     build: {
         outDir: 'docs',
         emptyOutDir: true
     }
 })`}
             let:highlighted
-        >
-            <LineNumbers {highlighted} />
-        </Highlight>
+            >
+                <LineNumbers {highlighted} />
+            </Highlight>
+        </div>
     </div>
     <div class="p"><br />Projekt elindítása</div>
     <Highlight language={bash} code={`npm run dev`}></Highlight>
@@ -56,5 +61,17 @@ export default defineConfig({
         box-shadow: 1px 1px 4px black;
         border: solid 10px gray;
         border-radius: 20px;
+    }
+    div.code {
+        padding: 8px;
+        background-color: rgb(9, 65, 47);
+        border-radius: 15px;
+    }
+    div.codein {
+        padding: 5px;
+        box-shadow: 0px 0px 4px inset white;
+        border-radius:10px;
+        border:solid 4px rgb(22, 66, 51);
+        background-color: rgb(9, 65, 47);
     }
 </style>

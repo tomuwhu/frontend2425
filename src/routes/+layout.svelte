@@ -7,7 +7,7 @@
         { name: "Portfólió követelmények", href: "/frontend2425/portfolio" },
         { name: "Frontend tematika", href: "/frontend2425/tematika" },
         {
-            name: "Új (Vite-Svelte) projekt létrehozása",
+            name: "Új projekt létrehozása",
             href: "/frontend2425/createsvelte",
         },
     ];
@@ -29,11 +29,13 @@
         }
         a.menu {
             padding: 0px;
-            padding-left: 10px;
-            padding-right: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
             margin-bottom: 0px;
             white-space: nowrap;
             color: white;
+            padding-top:5px;
+            padding-bottom:5px;
         }
         a.menu.selected {
             background-color: #d5e4f3;
@@ -46,6 +48,8 @@
             margin: 0px;
             background-color: black;
             text-align: center;
+            padding-top:5px;
+            padding-bottom:5px;
         }
         h1 {
             text-align: center;
