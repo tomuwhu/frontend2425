@@ -63,8 +63,10 @@ export default defineConfig({
         box-shadow: 1px 1px 5px black;
     }
     :global(code.hljs) {
-        border-radius: 10px;
+        border-radius: 14px;
         background-color: rgb(10, 62, 62);
+        border: solid 9px rgb(19, 82, 60);
+        box-shadow: 0px 0px 3px inset white;
     }
     div.p {
         font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -81,6 +83,7 @@ export default defineConfig({
         box-shadow: 1px 1px 4px black;
         border: solid 10px gray;
         border-radius: 20px;
+        background-color: rgb(187, 195, 191);
     }
     div.code {
         padding: 8px;
