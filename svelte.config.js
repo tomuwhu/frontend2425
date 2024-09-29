@@ -1,5 +1,5 @@
 import adapter from '@sveltejs/adapter-static';
-
+const dev = process.argv.includes('dev');
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
@@ -10,7 +10,7 @@ const config = {
 			precompress: false,
 			strict: true,
 			paths: {
-				base: '/frontend2425/'
+				base: dev ? '' : process.env.BASE_PATH
 			}
 		})
 	}
