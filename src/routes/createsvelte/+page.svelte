@@ -28,12 +28,15 @@
         >
             <LineNumbers {highlighted} />
         </Highlight>
-        Projekt elindítása
+        <p>
+            Projekt elindítása
+        </p>
         <Highlight language={bash} code={`npm run dev`} let:highlighted>
             <LineNumbers {highlighted} />
         </Highlight>
-
-        Projekt buildelése
+        <p>
+            Projekt buildelése
+        </p>
         <Highlight language={bash} code={`npm run build`} let:highlighted>
             <LineNumbers {highlighted} />
         </Highlight>
