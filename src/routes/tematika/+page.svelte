@@ -24,12 +24,8 @@
         margin: auto;
     }
 
-    :global(img) {
-        width: 100px;
-    }
-
-    :global(h1) {
-        font-size: 25px;
+    :global(img[alt="Logók"]) {
+        width: 60px;
     }
 
     :global(h2) {
@@ -59,10 +55,6 @@
         background-color: rgb(94, 94, 67);
         box-shadow: 1px 1px 3px black;
         text-align: left;
-    }
-
-    :global(img) {
-        width: 60px;
     }
 
     :global(h1) {

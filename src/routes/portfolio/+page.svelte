@@ -24,10 +24,6 @@
 		margin: auto;
 	}
 
-	:global(img) {
-		width: 100px;
-	}
-
 	:global(h2) {
 		font-size: 20px;
 	}
@@ -55,10 +51,6 @@
 		background-color: rgb(94, 94, 67);
 		box-shadow: 1px 1px 3px black;
 		text-align: left;
-	}
-
-	:global(img) {
-		width: 60px;
 	}
 
 	:global(em) {
