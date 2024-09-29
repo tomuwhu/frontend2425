@@ -126,6 +126,9 @@
 		border-collapse: separate;
         border-spacing: 6px;
         background-color: rgb(222, 217, 210);
+        border: solid 16px gray;
+        border-radius: 30px;
+        box-shadow: 1px 1px 4px black;
 	}
 	td {
 		padding-left: 10px;
