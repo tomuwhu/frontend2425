@@ -16,9 +16,16 @@
 <svelte:head>
     {@html atomOneDark}
     <style>
+        a {
+            all: unset;
+            cursor: pointer;
+        }
+        a:hover {
+            background-color: gray;
+        }
         body {
             margin: 0px;
-            background-color: blackMetal;
+            background-color: #d5e4f3;
         }
         a.menu {
             padding: 0px;
@@ -29,7 +36,7 @@
             color: white;
         }
         a.menu.selected {
-            background-color: white;
+            background-color: #d5e4f3;
             color: black;
         }
         a.menu:hover {
@@ -39,6 +46,13 @@
             margin: 0px;
             background-color: black;
             text-align: center;
+        }
+        h1 {
+            text-align: center;
+            color: rgb(8, 92, 98);
+            text-shadow: 1px 1px 3px gray;
+            margin-top: 0px;
+            font-size: 20px;
         }
     </style>
 </svelte:head>

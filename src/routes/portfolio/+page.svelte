@@ -28,10 +28,6 @@
 		width: 100px;
 	}
 
-	:global(h1) {
-		font-size: 25px;
-	}
-
 	:global(h2) {
 		font-size: 20px;
 	}
@@ -55,6 +51,7 @@
 		border: solid 1px gray;
 		border-radius: 17px;
 		padding: 10px;
+		margin-top: 10px;
 		background-color: rgb(94, 94, 67);
 		box-shadow: 1px 1px 3px black;
 		text-align: left;
@@ -62,14 +59,6 @@
 
 	:global(img) {
 		width: 60px;
-	}
-
-	:global(h1) {
-		text-align: center;
-		color: rgb(8, 92, 98);
-		text-shadow: 1px 1px 3px gray;
-		margin-top: 0px;
-		font-size: 22px;
 	}
 
 	:global(em) {

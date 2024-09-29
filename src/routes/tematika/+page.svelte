@@ -55,6 +55,7 @@
         border: solid 1px gray;
         border-radius: 17px;
         padding: 10px;
+        margin-top: 10px;
         background-color: rgb(94, 94, 67);
         box-shadow: 1px 1px 3px black;
         text-align: left;
