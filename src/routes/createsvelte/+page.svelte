@@ -36,14 +36,6 @@
         <Highlight language={bash} code={`npm run build`} let:highlighted>
             <LineNumbers {highlighted} />
         </Highlight>
-        <p>Deploy:</p>
-        <Highlight
-            language={bash}
-            code={`git commit -am "commit message" && git push`}
-            let:highlighted
-        >
-            <LineNumbers {highlighted} />
-        </Highlight>
     </div>
 </div>
 
