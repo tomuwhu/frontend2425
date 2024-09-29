@@ -10,7 +10,7 @@ const config = {
 			precompress: false,
 			strict: true,
 			paths: {
-				base: 'frontend2425'
+				base: '/frontend2425/'
 			}
 		})
 	}
