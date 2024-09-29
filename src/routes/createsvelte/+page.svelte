@@ -10,7 +10,7 @@
     </Highlight>
     <p>
         Projeknév megadása, Svelte választása
-        <br><br>
+        <br /><br />
         vite.config.js:
     </p>
     <div class="code">
@@ -26,6 +26,15 @@
 })`}
             let:highlighted
         >
+            <LineNumbers {highlighted} />
+        </Highlight>
+        Projekt elindítása
+        <Highlight language={bash} code={`npm run dev`} let:highlighted>
+            <LineNumbers {highlighted} />
+        </Highlight>
+
+        Projekt buildelése
+        <Highlight language={bash} code={`npm run build`} let:highlighted>
             <LineNumbers {highlighted} />
         </Highlight>
     </div>
@@ -45,6 +54,6 @@
         margin: 0px;
         background-color: #282c34;
         color: white;
-        font-family:monospace
+        font-family: monospace;
     }
 </style>
