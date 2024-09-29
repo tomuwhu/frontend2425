@@ -8,7 +8,10 @@ const config = {
 			assets: 'docs',
 			fallback: undefined,
 			precompress: false,
-			strict: true
+			strict: true,
+			paths: {
+				base: 'frontend2425'
+			}
 		})
 	}
 };
