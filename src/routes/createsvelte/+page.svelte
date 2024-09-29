@@ -39,9 +39,15 @@ export default defineConfig({
     <Highlight language={bash} code={`npm run dev -- --open`}></Highlight>
     <div class="p">Projekt buildelése</div>
     <Highlight language={bash} code={`npm run build`}></Highlight>
+    <div class="p">Projekt publikálása (deploy)
+        <img src="commit.jpeg" alt="Commit">
+    </div>
 </div>
 
 <style>
+    img {
+        margin: 20px;
+    }
     :global(code.hljs) {
         border-radius: 10px;
         background-color: rgb(10, 62, 62);
