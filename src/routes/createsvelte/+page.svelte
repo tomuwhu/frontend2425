@@ -9,7 +9,8 @@
         <LineNumbers {highlighted} />
     </Highlight>
     <p>
-        Projeknév megadása Svelte választása<br />
+        Projeknév megadása, Svelte választása
+        <br><br>
         vite.config.js:
     </p>
     <div class="code">
@@ -31,9 +32,19 @@
 </div>
 
 <style>
+    div.cont {
+        margin: 10px;
+        padding: 10px;
+        box-shadow: 1px 1px 4px black;
+        border: solid 10px gray;
+        border-radius: 20px;
+    }
     p {
         padding: 0px;
+        padding-left: 72px;
         margin: 0px;
-        background-color: gray;
+        background-color: #282c34;
+        color: white;
+        font-family:monospace
     }
 </style>
