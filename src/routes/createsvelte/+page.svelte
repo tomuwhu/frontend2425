@@ -36,7 +36,7 @@ export default defineConfig({
         </div>
     </div>
     <div class="p"><br />Projekt elindítása</div>
-    <Highlight language={bash} code={`npm run dev`}></Highlight>
+    <Highlight language={bash} code={`npm run dev -- --open`}></Highlight>
     <div class="p">Projekt buildelése</div>
     <Highlight language={bash} code={`npm run build`}></Highlight>
 </div>
