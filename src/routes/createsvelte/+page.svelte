@@ -29,7 +29,7 @@ export default defineConfig({
         emptyOutDir: true
     }
 })`}
-            let:highlighted
+                let:highlighted
             >
                 <LineNumbers {highlighted} />
             </Highlight>
@@ -39,14 +39,28 @@ export default defineConfig({
     <Highlight language={bash} code={`npm run dev -- --open`}></Highlight>
     <div class="p">Projekt buildelése</div>
     <Highlight language={bash} code={`npm run build`}></Highlight>
-    <div class="p">Projekt publikálása (deploy)
-        <img src="commit.jpeg" alt="Commit">
+    <div class="p">
+        Projekt publikálása (deploy)
+        <img src="commit.jpeg" alt="Commit" /> <img src="sync.jpg" alt="Sync" />
+        <span>GitHub - Settings - Pages - Build and deployment: <i>master;</i> - <i>/docs</i> - Save</span>
     </div>
 </div>
 
 <style>
+    i {
+        color: rgb(86, 86, 42);
+    }
+    span {
+        display: block;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
     img {
         margin: 20px;
+        height: 140px;
+        border-radius: 11px;
+        border:solid 10px rgb(10, 62, 62);
+        box-shadow: 1px 1px 5px black;
     }
     :global(code.hljs) {
         border-radius: 10px;
@@ -76,8 +90,8 @@ export default defineConfig({
     div.codein {
         padding: 5px;
         box-shadow: 0px 0px 4px inset white;
-        border-radius:10px;
-        border:solid 4px rgb(22, 66, 51);
+        border-radius: 10px;
+        border: solid 4px rgb(22, 66, 51);
         background-color: rgb(9, 65, 47);
     }
 </style>
