@@ -5,20 +5,18 @@
 </script>
 
 <div class="cont">
-    <div class="p">
-        Projekt létrehozása:
-    </div>
-    <Highlight language={bash} code={`npm create vite
-# majd: Projeknév megadása, Svelte választása`} >
-    </Highlight>
-    <div class="p">
-        Config módosítása
-    </div>
-    <br>
-    <div class="code">
+    <div class="p">Projekt létrehozása:</div>
     <Highlight
-        language={javascript}
-        code={`//vite.config.js:
+        language={bash}
+        code={`npm create vite
+# majd: Projeknév megadása, Svelte választása`}
+    ></Highlight>
+    <div class="p">Config beállítása (GitHub Deploy-hoz)</div>
+    <br />
+    <div class="code">
+        <Highlight
+            language={javascript}
+            code={`//vite.config.js:
 export default defineConfig({
     plugins: [svelte()],
     base: '/Projeknév/',
@@ -27,17 +25,15 @@ export default defineConfig({
         emptyOutDir: true
     }
 })`}
-        let:highlighted
-    >
-        <LineNumbers {highlighted} />
-    </Highlight>
+            let:highlighted
+        >
+            <LineNumbers {highlighted} />
+        </Highlight>
     </div>
-    <div class="p"><br>Projekt elindítása</div>
-    <Highlight language={bash} code={`npm run dev`}>
-    </Highlight>
+    <div class="p"><br />Projekt elindítása</div>
+    <Highlight language={bash} code={`npm run dev`}></Highlight>
     <div class="p">Projekt buildelése</div>
-    <Highlight language={bash} code={`npm run build`}>
-    </Highlight>
+    <Highlight language={bash} code={`npm run build`}></Highlight>
 </div>
 
 <style>
@@ -46,11 +42,13 @@ export default defineConfig({
         background-color: rgb(10, 62, 62);
     }
     div.p {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
         text-shadow: 1px 1px 3px gray;
         text-align: center;
         display: block;
         white-space: pre;
+        color: rgb(37, 104, 123);
     }
     div.cont {
         margin: 10px;
