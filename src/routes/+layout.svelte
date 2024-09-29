@@ -3,10 +3,13 @@
     import { page } from "$app/stores";
     $: currentRoute = $page.url.pathname;
     const menu = [
-        { name: "Órai munka és tananyagok", href: "/" },
-        { name: "Portfólió követelmények", href: "/portfolio" },
-        { name: "Frontend tematika", href: "/tematika" },
-        { name: "Új (Vite-Svelte) projekt létrehozása", href: "/createsvelte" },
+        { name: "Órai munka és tananyagok", href: "/frontend2425/" },
+        { name: "Portfólió követelmények", href: "/frontend2425/portfolio" },
+        { name: "Frontend tematika", href: "/frontend2425/tematika" },
+        {
+            name: "Új (Vite-Svelte) projekt létrehozása",
+            href: "/frontend2425/createsvelte",
+        },
     ];
 </script>
 

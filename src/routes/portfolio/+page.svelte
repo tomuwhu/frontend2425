@@ -4,7 +4,7 @@
 	const md = markdownit()
 	var result
 	onMount(async () => {
-		let ft = await fetch('../../portfolio.md').then((v) => v.text())
+		let ft = await fetch('/frontend2425/portfolio.md').then((v) => v.text())
 		result = md.render(ft)
 	})
 </script>
