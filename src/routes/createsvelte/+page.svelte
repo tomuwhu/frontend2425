@@ -5,54 +5,58 @@
 </script>
 
 <div class="cont">
-    <Highlight language={bash} code={`npm create vite`} let:highlighted>
+    <div class="p">
+        Projekt létrehozása:
+    </div>
+    <Highlight language={bash} code={`npm create vite
+# majd: Projeknév megadása, Svelte választása`} >
+    </Highlight>
+    <div class="p">
+        Config módosítása
+    </div>
+    <br>
+    <div class="code">
+    <Highlight
+        language={javascript}
+        code={`//vite.config.js:
+export default defineConfig({
+    plugins: [svelte()],
+    base: '/Projeknév/',
+    build: {
+        outDir: 'docs',
+        emptyOutDir: true
+    }
+})`}
+        let:highlighted
+    >
         <LineNumbers {highlighted} />
     </Highlight>
-    <p>
-        Projeknév megadása, Svelte választása
-        <br /><br />
-        vite.config.js:
-    </p>
-    <div class="code">
-        <Highlight
-            language={javascript}
-            code={`export default defineConfig({
-  plugins: [svelte()],
-  base: '/Projeknév/',
-  build: {
-    outDir: 'docs',
-    emptyOutDir: true
-  }
-})`}
-            let:highlighted
-        >
-            <LineNumbers {highlighted} />
-        </Highlight>
-        <p>Projekt elindítása</p>
-        <Highlight language={bash} code={`npm run dev`} let:highlighted>
-            <LineNumbers {highlighted} />
-        </Highlight>
-        <p>Projekt buildelése</p>
-        <Highlight language={bash} code={`npm run build`} let:highlighted>
-            <LineNumbers {highlighted} />
-        </Highlight>
     </div>
+    <div class="p"><br>Projekt elindítása</div>
+    <Highlight language={bash} code={`npm run dev`}>
+    </Highlight>
+    <div class="p">Projekt buildelése</div>
+    <Highlight language={bash} code={`npm run build`}>
+    </Highlight>
 </div>
 
 <style>
+    :global(code.hljs) {
+        border-radius: 10px;
+        background-color: rgb(10, 62, 62);
+    }
+    div.p {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-shadow: 1px 1px 3px gray;
+        text-align: center;
+        display: block;
+        white-space: pre;
+    }
     div.cont {
         margin: 10px;
         padding: 10px;
         box-shadow: 1px 1px 4px black;
         border: solid 10px gray;
         border-radius: 20px;
-    }
-    p {
-        padding: 0px;
-        padding-left: 72px;
-        margin: 0px;
-        background-color: #282c34;
-        color: white;
-        font-family: monospace;
     }
 </style>
