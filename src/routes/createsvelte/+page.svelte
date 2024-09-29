@@ -16,7 +16,7 @@ code . #vscode elindítása`}
     ></Highlight>
     <div class="p">Config beállítása (GitHub Deploy-hoz)</div>
     <br />
-    <div class="code">
+    <div class="code"> 
         <div class="codein">
             <Highlight
                 language={javascript}
@@ -41,7 +41,7 @@ export default defineConfig({
     <Highlight language={bash} code={`npm run build`}></Highlight>
     <div class="p">
         Projekt publikálása (deploy)
-        <img src="commit.jpeg" alt="Commit" /> <img src="sync.jpg" alt="Sync" />
+        <img src="commit.jpg" alt="Commit" /> <img src="sync.jpg" alt="Sync" />
         <span>GitHub - Settings - Pages - Build and deployment: <i>master;</i> - <i>/docs</i> - Save</span>
     </div>
 </div>
