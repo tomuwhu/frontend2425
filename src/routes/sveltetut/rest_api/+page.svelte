@@ -50,14 +50,14 @@ onMount(async () => {
             </Highlight>
         </div>
     </div>
-    <div class="p">POST data:<br /></div>
+    <div class="p">Adat küldése szerverre: POST (PUT, PATCH, DELETE) metódus:<br /></div>
     <div class="code">
         <div class="codein">
             <Highlight
                 language={javascript}
                 code={`async () => {
   const rawResponse = await fetch('http://localhost:3000/post/', {
-    method: 'POST',
+    method: 'POST', //v. PUT v. PATCH v. DELETE
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
