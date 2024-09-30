@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../_app/immutable/assets/6.DfGWmqsd.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/javascript.BsZ23rxg.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.CQY_ALfG.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.DonIhykA.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.Gg1qObrg.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.CWUh1BLi.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.3uUcdeal.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.Y_3uP867.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/each.D6YF6ztN.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.fzMYAejO.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/6.Cs9ojlyo.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/javascript.CcgQQwQH.js"><!-- HEAD_svelte-hiak7_START --><!-- HTML_TAG_START --><style>pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{color:#abb2bf;background:#282c34}.hljs-comment,
+.hljs-quote{color:#5c6370;font-style:italic}.hljs-doctag,
+.hljs-keyword,
+.hljs-formula{color:#c678dd}.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst{color:#e06c75}.hljs-literal{color:#56b6c2}.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta .hljs-string{color:#98c379}.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number{color:#d19a66}.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title{color:#61aeee}.hljs-built_in,
+.hljs-title.class_,
+.hljs-class .hljs-title{color:#e6c07b}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:bold}.hljs-link{text-decoration:underline}</style><!-- HTML_TAG_END --><style data-svelte-h="svelte-1j7ldh0">a {
+            all: unset;
+            cursor: pointer;
+        }
+        a:hover {
+            background-color: gray;
+        }
+        body {
+            margin: 0px;
+            background-color: #d5e4f3;
+        }
+        a.menu {
+            padding: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 0px;
+            white-space: nowrap;
+            color: white;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        a.menu.selected {
+            background-color: #d5e4f3;
+            color: black;
+        }
+        a.menu:hover {
+            background-color: rgb(85, 107, 99);
+        }
+        menu {
+            margin: 0px;
+            background-color: black;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        h1 {
+            text-align: center;
+            color: rgb(8, 92, 98);
+            text-shadow: 1px 1px 3px gray;
+            margin-top: 0px;
+            font-size: 20px;
+        }</style><!-- HEAD_svelte-hiak7_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">   <menu><a class="menu norm" href="/frontend2425/">Példaprogramok</a><a class="menu norm" href="/frontend2425/sveltetut">Tananyag</a><a class="menu norm" href="/frontend2425/portfolio">Portfólió követelmények</a><a class="menu norm" href="/frontend2425/tematika">Frontend tematika</a></menu> <div class="cont svelte-86hhpa"><div class="p svelte-86hhpa" data-svelte-h="svelte-1j6gka4">Kezdeti adatok lekérdezése a szerverről:<br></div> <div class="code svelte-86hhpa"><div class="codein svelte-86hhpa"><div class="svelte-1vh31p0" style="overflow-x: auto;"><table class="svelte-1vh31p0"><tbody class="hljs"> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">1</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START --><span class="hljs-comment">//App.js &lt;script&gt;&lt;/sript&gt; -be:</span><!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">2</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START --><span class="hljs-keyword">import</span> { onMount } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;svelte&quot;</span>;<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">3</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START --><span class="hljs-title function_">onMount</span>(<span class="hljs-title function_">async</span> () =&gt; {<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">4</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->    <span class="hljs-keyword">let</span> data = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">&#x27;https://tomuwhu.github.io/orarend_generator_svelte/tanarok.json&#x27;</span>)<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">5</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->        .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">v</span> =&gt;</span>v.<span class="hljs-title function_">json</span>())<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">6</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(data)<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">7</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->})<!-- HTML_TAG_END --></code></pre> </td> </tr></tbody></table> </div></div></div> <div class="p svelte-86hhpa" data-svelte-h="svelte-soiila">POST data:<br></div> <div class="code svelte-86hhpa"><div class="codein svelte-86hhpa"><div class="svelte-1vh31p0" style="overflow-x: auto;"><table class="svelte-1vh31p0"><tbody class="hljs"> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">1</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START --><span class="hljs-title function_">async</span> () =&gt; {<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">2</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->  <span class="hljs-keyword">const</span> rawResponse = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">&#x27;http://localhost:3000/post/&#x27;</span>, {<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">3</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->    <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">4</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->    <span class="hljs-attr">headers</span>: {<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">5</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->      <span class="hljs-string">&#x27;Accept&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">6</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->      <span class="hljs-string">&#x27;Content-Type&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span><!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">7</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->    },<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">8</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->    <span class="hljs-attr">body</span>: <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>({<span class="hljs-attr">a</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">b</span>: <span class="hljs-string">&#x27;Textual content&#x27;</span>})<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">9</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->  })<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">10</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->  <span class="hljs-keyword">let</span> answer = <span class="hljs-keyword">await</span> rawResponse.<span class="hljs-title function_">json</span>()<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">11</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(answer)<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">12</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->}<!-- HTML_TAG_END --></code></pre> </td> </tr></tbody></table> </div></div></div> </div> 
+			
+			<script>
+				{
+					__sveltekit_1ij41dp = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						assets: "/frontend2425"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.CQY_ALfG.js"),
+						import("../_app/immutable/entry/app.CWUh1BLi.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 6],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

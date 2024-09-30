@@ -3,13 +3,13 @@
     import { page } from "$app/stores";
     $: currentRoute = $page.url.pathname;
     const menu = [
-        { name: "Órai munka és tananyagok", href: "/frontend2425/" },
+        { name: "Példaprogramok", href: "/frontend2425/" },
+        {
+            name: "Tananyag",
+            href: "/frontend2425/sveltetut",
+        },
         { name: "Portfólió követelmények", href: "/frontend2425/portfolio" },
         { name: "Frontend tematika", href: "/frontend2425/tematika" },
-        {
-            name: "Új projekt létrehozása",
-            href: "/frontend2425/createsvelte",
-        },
     ];
 </script>
 
@@ -34,8 +34,8 @@
             margin-bottom: 0px;
             white-space: nowrap;
             color: white;
-            padding-top:5px;
-            padding-bottom:5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
         }
         a.menu.selected {
             background-color: #d5e4f3;
@@ -48,8 +48,8 @@
             margin: 0px;
             background-color: black;
             text-align: center;
-            padding-top:5px;
-            padding-bottom:5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
         }
         h1 {
             text-align: center;

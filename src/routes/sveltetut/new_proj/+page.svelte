@@ -41,7 +41,7 @@ export default defineConfig({
     <Highlight language={bash} code={`npm run build`}></Highlight>
     <div class="p">
         Projekt publikálása (deploy)
-        <img src="commit.jpg" alt="Commit" /> <img src="sync.jpg" alt="Sync" />
+        <img src="/frontend2425/commit.jpg" alt="Commit" /> <img src="/frontend2425/sync.jpg" alt="Sync" />
         <span>GitHub - Settings - Pages - Build and deployment: <i>master;</i> - <i>/docs</i> - Save</span>
     </div>
 </div>
