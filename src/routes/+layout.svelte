@@ -3,10 +3,10 @@
     import { page } from "$app/stores";
     $: currentRoute = $page.url.pathname;
     const menu = [
-        { name: "Példaprogramok", href: "/frontend2425/" },
+        { name: "Példaprogramok", href: "/frontend2425/peldaprog" },
         {
             name: "Tananyag",
-            href: "/frontend2425/sveltetut",
+            href: "/frontend2425/sveltetut/new_proj",
         },
         { name: "Portfólió követelmények", href: "/frontend2425/portfolio" },
         { name: "Frontend tematika", href: "/frontend2425/tematika" },
@@ -58,12 +58,19 @@
             margin-top: 0px;
             font-size: 20px;
         }
+        span {
+            font-size: 10px;
+            color: white;
+        }
     </style>
 </svelte:head>
 <menu>
     {#each menu as item}
+        <span> </span>
         <a
-            class="menu {currentRoute === item.href ? 'selected' : 'norm'}"
+            class="menu {currentRoute.includes(item.href)
+                ? 'selected'
+                : 'norm'}"
             href={item.href}>{item.name}</a
         >
     {/each}
