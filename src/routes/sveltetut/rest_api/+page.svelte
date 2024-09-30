@@ -5,7 +5,7 @@
 
 <div class="cont">
     <div class="p">REST API működése<br /></div>
-    <div class="p2">
+        <div class="p2">
 <table>
     <tr><td colspan=3>A kliensek ...</td></tr>
     <tr>
@@ -32,6 +32,9 @@ Például termék törléséhez a webshopból a DELETE metódust használják.
     </tr>
 </table>
     </div>
+    <div class=p>
+        <img class="ra" src="/frontend2425/rest-api.png" alt="REST API">
+    </div>
     <div class="p">Kezdeti adatok lekérdezése a szerverről (GET metódus):<br /></div>
     <div class="code">
         <div class="codein">
@@ -40,8 +43,7 @@ Például termék törléséhez a webshopból a DELETE metódust használják.
                 code={`//App.js <script></sript> -be:
 import { onMount } from "svelte";
 onMount(async () => {
-    let data = await fetch('https://tomuwhu.github.io/orarend_generator_svelte/tanarok.json')
-        .then(v =>v.json())
+    let data = await fetch('https://tomuwhu.github.io/orarend_generator_svelte/tanarok.json').then(v =>v.json())
     console.log(data)
 })`}
                 let:highlighted
@@ -55,17 +57,16 @@ onMount(async () => {
         <div class="codein">
             <Highlight
                 language={javascript}
-                code={`async () => {
+                code={`async () => { //Svelte eseménybe pl.: on:click={async () => { ...
+  ...
   const rawResponse = await fetch('http://localhost:3000/post/', {
     method: 'POST', //v. PUT v. PATCH v. DELETE
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
-    },
+    headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
     body: JSON.stringify({a: 1, b: 'Textual content'})
   })
   let answer = await rawResponse.json()
   console.log(answer)
+  ...
 }`}
                 let:highlighted
             >
@@ -76,8 +77,15 @@ onMount(async () => {
 </div>
 
 <style>
+    img {
+        margin: 10px;
+        height: 150px;
+        border-radius: 30px;
+        border:solid 13px rgb(22, 103, 103);
+        box-shadow: 1px 1px 5px black;
+    }
     :global(code.hljs) {
-        border-radius: 14px;
+        border-radius: 15px;
         background-color: rgb(10, 62, 62);
         border: solid 9px rgb(19, 82, 60);
         box-shadow: 0px 0px 3px inset white;
