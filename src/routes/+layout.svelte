@@ -1,16 +1,20 @@
 <script>
-    import { atomOneDark } from "svelte-highlight/styles";
-    import { page } from "$app/stores";
-    $: currentRoute = $page.url.pathname;
+    import { atomOneDark } from "svelte-highlight/styles"
+    import { page } from "$app/stores"
+    $: currentRoute = $page.url.pathname
+    const check = s => {
+        let [a, b, c,...z] = s.split("/")
+        return a + b + c
+    }
     const menu = [
         { name: "Példaprogramok", href: "/frontend2425/peldaprog" },
         {
             name: "Tananyag",
-            href: "/frontend2425/sveltetut/new_proj",
+            href: "/frontend2425/sveltetut/new_proj"
         },
         { name: "Portfólió követelmények", href: "/frontend2425/portfolio" },
-        { name: "Frontend tematika", href: "/frontend2425/tematika" },
-    ];
+        { name: "Frontend tematika", href: "/frontend2425/tematika" }
+    ]
 </script>
 
 <svelte:head>
@@ -63,7 +67,7 @@
 <menu>
     {#each menu as item}
         <a
-            class="menu {currentRoute.includes(item.href)
+            class="menu {check(currentRoute) == check(item.href)
                 ? 'selected'
                 : 'norm'}"
             href={item.href}>{item.name}</a
