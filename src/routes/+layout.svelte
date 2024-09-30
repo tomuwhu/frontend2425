@@ -58,15 +58,10 @@
             margin-top: 0px;
             font-size: 20px;
         }
-        span {
-            font-size: 10px;
-            color: white;
-        }
     </style>
 </svelte:head>
 <menu>
     {#each menu as item}
-        <span> </span>
         <a
             class="menu {currentRoute.includes(item.href)
                 ? 'selected'

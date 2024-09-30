@@ -42,7 +42,7 @@ export default defineConfig({
     <div class="p">
         Projekt publikálása (deploy)
         <img src="/frontend2425/commit.jpg" alt="Commit" /> <img src="/frontend2425/sync.jpg" alt="Sync" />
-        <span>GitHub - Settings - Pages - Build and deployment: <i>master;</i> - <i>/docs</i> - Save</span>
+        <span class="i">GitHub - Settings - Pages - Build and deployment: <i>master;</i> - <i>/docs</i> - Save</span>
     </div>
 </div>
 
@@ -50,7 +50,7 @@ export default defineConfig({
     i {
         color: rgb(86, 86, 42);
     }
-    span {
+    span.i {
         display: block;
         font-family: 'Courier New', Courier, monospace;
         font-weight: bold;
