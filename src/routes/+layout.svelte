@@ -44,9 +44,14 @@
         a.menu.selected {
             background-color: #d5e4f3;
             color: black;
+            cursor: default;
         }
         a.menu:hover {
             background-color: rgb(85, 107, 99);
+        }
+        a.menu.selected:hover {
+            background-color: #d5e4f3;
+            color: black;
         }
         menu {
             margin: 0px;

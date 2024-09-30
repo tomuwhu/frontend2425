@@ -40,9 +40,14 @@
   a.am.selected {
     background-color: black;
     color: yellow;
+    cursor: default;
+  }
+  a.am.selected:hover {
+      background-color: black;
+      color: yellow;
   }
   a.am:hover {
-    background-color: rgb(149, 149, 149);
-    color: rgb(85, 85, 12);
+    background-color: rgb(160, 164, 122);
+    color: rgb(255, 255, 122);
   }
 </style>
