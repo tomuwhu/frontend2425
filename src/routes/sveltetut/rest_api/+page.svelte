@@ -4,7 +4,35 @@
 </script>
 
 <div class="cont">
-    <div class="p">Kezdeti adatok lekérdezése a szerverről:<br /></div>
+    <div class="p">REST API működése<br /></div>
+    <div class="p2">
+<table>
+    <tr><td colspan=3>A kliensek ...</td></tr>
+    <tr>
+        <td></td>
+        <td>-</td>
+        <td>a GET metódus segítségével érik el az erőforrásokat, amelyek a kiszolgáló megadott URL-címén találhatók, paramétereket küldhetnek a RESTful API kérésben, hogy utasítsák a szervert az adatok szűrésére a küldés előtt.</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>-</td>
+        <td>a POST metódus segítségével küldik el az adatokat a szervernek. Tartalmazza az elküldendő adatot a kéréssel együtt.</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>-</td>
+        <td>a PUT és , PATCH metódusok segítségével tudják módosítani a szerveren meglévő erőforrásokat.</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>-</td>
+        <td>a DELETE metódus segítségével törölhetnek egy erőforrást.
+Például termék törléséhez a webshopból a DELETE metódust használják.
+        </td>
+    </tr>
+</table>
+    </div>
+    <div class="p">Kezdeti adatok lekérdezése a szerverről (GET metódus):<br /></div>
     <div class="code">
         <div class="codein">
             <Highlight
@@ -53,6 +81,24 @@ onMount(async () => {
         background-color: rgb(10, 62, 62);
         border: solid 9px rgb(19, 82, 60);
         box-shadow: 0px 0px 3px inset white;
+    }
+    div.p2 {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        white-space: pre-wrap;
+        font-size: 14px;
+        color:rgb(87, 142, 181);
+    }
+    div.p2 table {
+        border-radius: 15px;
+        border: solid 14px rgb(135, 173, 163);
+        border-spacing: 5px;
+        background-color: rgb(253, 255, 240);
+        box-shadow: 1px 1px 4px inset black;
+    }
+    div.p2 table tr td {
+        vertical-align: top;
+        min-width: 10px;
     }
     div.p {
         font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
