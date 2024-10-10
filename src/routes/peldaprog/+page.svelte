@@ -100,6 +100,15 @@
         "https://github.com/tomuwhu/frontend2425/blob/master/src/routes/peldaprog/tologatos/%2Bpage.svelte",
       online: "https://tomuwhu.github.io/frontend2425/peldaprog/tologatos",
     },
+    {
+      id: 11,
+      sz: [33, 39],
+      date: "2024.10.09. - 024.10.10.",
+      theme:
+        '<a href="https://vite.new/svelte" target="_blank">Vite-Svelte</a> Komponens + Ellipszis',
+      source: "https://github.com/tomuwhu/mai",
+      online: "https://tomuwhu.github.io/mai/",
+    },
   ];
 </script>
 
