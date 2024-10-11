@@ -119,28 +119,47 @@
     >Discord Server Invite: q4G2k479Zw</a
   >
   <hr />
-  <table id="t1">
-    {#each data as item}
-      <tr>
-        {#if item.sz[1]}
-          <td class="id">{item.sz[0]}-{item.sz[1]}.</td>
-        {:else}
-          <td class="id">{item.sz[0]}.</td>
-        {/if}
-        <td class="t">{item.date}</td>
-        <td class="t">{@html item.theme}</td>
-        {#if item.source}
-          <td class="i1"><a target="_blank" href={item.source}>👓</a></td>
-        {/if}
-        {#if item.online}
-          <td class="i2"><a target="_blank" href={item.online}>💻</a></td>
-        {/if}
-      </tr>
-    {/each}
+  <table id="t0">
+    <td>
+      <table id="t1">
+      {#each data as item}
+        <tr>
+          {#if item.sz[1]}
+            <td class="id">{item.sz[0]}-{item.sz[1]}.</td>
+          {:else}
+            <td class="id">{item.sz[0]}.</td>
+          {/if}
+          <td class="t">{item.date}</td>
+          <td class="t">{@html item.theme}</td>
+          {#if item.source}
+            <td class="i1"><a target="_blank" href={item.source}>👓</a></td>
+          {/if}
+          {#if item.online}
+            <td class="i2"><a target="_blank" href={item.online}>💻</a></td>
+          {/if}
+        </tr>
+      {/each}
+      </table>
+    </td>
+    <td style="width:20px; height: 300px;">
+      <div class="id">
+        <input type="range" orient="vertical" />
+      </div>
+    </td>
   </table>
+  
 </div>
 
 <style>
+  .id {
+    height: 100%;
+  }
+  input[type=range][orient=vertical] {
+    position: relative;
+    appearance: slider-vertical;
+    width: 16px;
+    height: 70px;
+  }
   div.cont {
     text-align: center;
   }
@@ -148,6 +167,9 @@
     font-family: "Courier New", Courier, monospace;
     padding: 20px;
     font-size: 25px;
+  }
+  table#t0 {
+    margin: auto;
   }
   table#t1 {
     margin: auto;
