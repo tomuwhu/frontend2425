@@ -109,6 +109,16 @@
       source: "https://github.com/tomuwhu/mai",
       online: "https://tomuwhu.github.io/mai/",
     },
+    {
+      id: 12,
+      sz: ["Esti tag"],
+      date: "2024.10.12.",
+      theme:
+        '<a href="https://vite.new/svelte" target="_blank">Vite-Svelte</a> Óra + Számológép',
+      source:
+        "https://github.com/tomuwhu/vite_esti_fetch/blob/main/src/App.svelte",
+      online: "https://tomuwhu.github.io/vite_esti_fetch/",
+    },
   ];
 </script>
 
@@ -122,23 +132,23 @@
   <table id="t0">
     <td>
       <table id="t1">
-      {#each data as item}
-        <tr>
-          {#if item.sz[1]}
-            <td class="id">{item.sz[0]}-{item.sz[1]}.</td>
-          {:else}
-            <td class="id">{item.sz[0]}.</td>
-          {/if}
-          <td class="t">{item.date}</td>
-          <td class="t">{@html item.theme}</td>
-          {#if item.source}
-            <td class="i1"><a target="_blank" href={item.source}>👓</a></td>
-          {/if}
-          {#if item.online}
-            <td class="i2"><a target="_blank" href={item.online}>💻</a></td>
-          {/if}
-        </tr>
-      {/each}
+        {#each data as item}
+          <tr>
+            {#if item.sz[1]}
+              <td class="id">{item.sz[0]}-{item.sz[1]}.</td>
+            {:else}
+              <td class="id">{item.sz[0]}.</td>
+            {/if}
+            <td class="t">{item.date}</td>
+            <td class="t">{@html item.theme}</td>
+            {#if item.source}
+              <td class="i1"><a target="_blank" href={item.source}>👓</a></td>
+            {/if}
+            {#if item.online}
+              <td class="i2"><a target="_blank" href={item.online}>💻</a></td>
+            {/if}
+          </tr>
+        {/each}
       </table>
     </td>
     <td style="width:20px; height: 300px;">
@@ -147,14 +157,13 @@
       </div>
     </td>
   </table>
-  
 </div>
 
 <style>
   .id {
     height: 100%;
   }
-  input[type=range][orient=vertical] {
+  input[type="range"][orient="vertical"] {
     position: relative;
     appearance: slider-vertical;
     width: 16px;
