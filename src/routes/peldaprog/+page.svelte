@@ -119,6 +119,15 @@
         "https://github.com/tomuwhu/vite_esti_fetch/blob/main/src/App.svelte",
       online: "https://tomuwhu.github.io/vite_esti_fetch/",
     },
+    {
+      id: 12,
+      sz: [40, 43],
+      date: "2024.10.16.",
+      theme:
+        '<a href="https://vite.new/svelte" target="_blank">SvelteKit</a> Car database (Dávidnak)',
+      source:
+        "https://github.com/tomuwhu/autos"
+    },
   ];
 </script>
 
