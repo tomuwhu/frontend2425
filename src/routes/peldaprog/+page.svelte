@@ -121,12 +121,13 @@
     },
     {
       id: 12,
-      sz: [40, 43],
-      date: "2024.10.16.",
+      sz: [40, 46],
+      date: "2024.10.16. - 024.10.17.",
       theme:
-        '<a href="https://vite.new/svelte" target="_blank">SvelteKit</a> Car database (Dávidnak)',
+        'SvelteKit FullStack with <a href="https://my-json-server.typicode.com/" target="_blank">my-json-server</a>: Car database (Dávidnak)',
       source:
-        "https://github.com/tomuwhu/autos"
+        "https://github.com/tomuwhu/autos",
+      online: 'https://tomuwhu.github.io/autos/'
     },
   ];
 </script>
