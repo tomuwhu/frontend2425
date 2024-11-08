@@ -129,6 +129,16 @@
         "https://github.com/tomuwhu/autos",
       online: 'https://tomuwhu.github.io/autos/'
     },
+    {
+      id: 13,
+      sz: ["Esti tag"],
+      date: "2024.11.08.",
+      theme:
+        'Svelte-PHP FullStack on <a href="https://www.nethely.hu/" target="_blank">Nethely</a>',
+      source:
+        "https://github.com/tomuwhu/vite_nethely",
+      online: 'https://vite.szte.eu/'
+    },
   ];
 </script>
 
