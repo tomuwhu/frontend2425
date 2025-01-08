@@ -139,6 +139,16 @@
         "https://github.com/tomuwhu/vite_nethely",
       online: 'https://vite.szte.eu/'
     },
+    {
+      id: 14,
+      sz: ['??', '??'],
+      date: "2025.01.08.",
+      theme:
+        'Tetris',
+      source:
+        "https://github.com/tomuwhu/tetris/blob/main/src/App.svelte",
+      online: 'https://tomuwhu.github.io/tetris/'
+    },
   ];
 </script>
 
