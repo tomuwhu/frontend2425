@@ -120,7 +120,7 @@
       online: "https://tomuwhu.github.io/vite_esti_fetch/",
     },
     {
-      id: 12,
+      id: 13,
       sz: [40, 46],
       date: "2024.10.16. - 024.10.17.",
       theme:
@@ -130,7 +130,7 @@
       online: 'https://tomuwhu.github.io/autos/'
     },
     {
-      id: 13,
+      id: 14,
       sz: ["Esti tag"],
       date: "2024.11.08.",
       theme:
@@ -140,7 +140,7 @@
       online: 'https://vite.szte.eu/'
     },
     {
-      id: 14,
+      id: 15,
       sz: ['??', '??'],
       date: "2025.01.08.",
       theme:
@@ -149,6 +149,14 @@
         "https://github.com/tomuwhu/tetris/blob/main/src/App.svelte",
       online: 'https://tomuwhu.github.io/tetris/'
     },
+    {
+			id: 16,
+			sz: ['Esti tag'],
+			date: '2025.01.11.',
+			theme: '<a href="https://vite.new/svelte" target="_blank">Vite-Svelte</a> Snake Game',
+			source: 'https://github.com/tomuwhu/kigyo/tree/main/src',
+			online: 'https://tomuwhu.github.io/kigyo/'
+		}
   ];
 </script>
 
