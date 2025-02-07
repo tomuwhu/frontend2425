@@ -3,6 +3,7 @@
   $: currentRoute = $page.url.pathname;
   const menu = [
     { name: "Új projekt", href: "/frontend2425/sveltetut/new_proj" },
+    { name: "Load / Actions", href: "/frontend2425/sveltetut/sveltekit_load" },
     { name: "REST API", href: "/frontend2425/sveltetut/rest_api" },
   ];
 </script>

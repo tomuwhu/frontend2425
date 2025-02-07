@@ -74,7 +74,26 @@ onMount(async () => {
             </Highlight>
         </div>
     </div>
+    <div class="p">SVELTEKIT Server API (+server.js):<br /></div>
+    <div class="code">
+        <div class="codein">
+            <Highlight
+                language={javascript}
+                code={`import { json } from '@sveltejs/kit';
+
+export const POST = async ({ request }) => {
+    console.log(await request.json())
+    return json({ animal: 'Cat', message: 'MEOW', method: 'POST' });
+};`}
+                let:highlighted
+            >
+                <LineNumbers {highlighted} />
+            </Highlight>
+        </div>
+    </div>
 </div>
+
+
 
 <style>
     img {

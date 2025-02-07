@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../_app/immutable/assets/2.Dvq2Rbs-.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/10.-9Fp0GC6.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/javascript.BsZ23rxg.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.BZ51a76U.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.BHoTqaVC.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.BBYLFFrh.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.DPGcI1yy.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.Bz4zfSzi.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.CUh0IM5e.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/each.D6YF6ztN.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.4u5hDyDN.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/2.AeaJOdsb.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/10.Cp724mgD.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/javascript.DTTPHHew.js"><!-- HEAD_svelte-t3f3cu_START --><!-- HTML_TAG_START --><style>pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{color:#abb2bf;background:#282c34}.hljs-comment,
+.hljs-quote{color:#5c6370;font-style:italic}.hljs-doctag,
+.hljs-keyword,
+.hljs-formula{color:#c678dd}.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst{color:#e06c75}.hljs-literal{color:#56b6c2}.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta .hljs-string{color:#98c379}.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number{color:#d19a66}.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title{color:#61aeee}.hljs-built_in,
+.hljs-title.class_,
+.hljs-class .hljs-title{color:#e6c07b}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:bold}.hljs-link{text-decoration:underline}</style><!-- HTML_TAG_END --><style data-svelte-h="svelte-uwvo65">a {
+            all: unset;
+            cursor: pointer;
+        }
+        a:hover {
+            background-color: gray;
+        }
+        body {
+            margin: 0px;
+            background-color: #d5e4f3;
+        }
+        a.menu {
+            padding: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 0px;
+            white-space: nowrap;
+            color: white;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        a.menu.selected {
+            background-color: #d5e4f3;
+            color: black;
+            cursor: default;
+        }
+        a.menu:hover {
+            background-color: rgb(85, 107, 99);
+        }
+        a.menu.selected:hover {
+            background-color: #d5e4f3;
+            color: black;
+        }
+        menu {
+            margin: 0px;
+            background-color: black;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        h1 {
+            text-align: center;
+            color: rgb(8, 92, 98);
+            text-shadow: 1px 1px 3px gray;
+            margin-top: 0px;
+            font-size: 20px;
+        }</style><!-- HEAD_svelte-t3f3cu_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">   <menu><a class="menu norm" href="/frontend2425/peldaprog">Példaprogramok</a><a class="menu selected" href="/frontend2425/sveltetut/new_proj">Tananyag</a><a class="menu norm" href="/frontend2425/portfolio">Portfólió követelmények</a><a class="menu norm" href="/frontend2425/tematika">Frontend tematika</a></menu> <menu class="am svelte-z3cpf"><span data-svelte-h="svelte-1qufua2"></span> <a class="am norm svelte-z3cpf" href="/frontend2425/sveltetut/new_proj">Új projekt</a><span data-svelte-h="svelte-1qufua2"></span> <a class="am selected svelte-z3cpf" href="/frontend2425/sveltetut/sveltekit_load">Load / Actions</a><span data-svelte-h="svelte-1qufua2"></span> <a class="am norm svelte-z3cpf" href="/frontend2425/sveltetut/rest_api">REST API</a></menu> <div class="cont svelte-p3z4zo"><div class="p svelte-p3z4zo" data-svelte-h="svelte-dvz0oh">SvelteKit Load / Actions<br></div> <div class="p2 svelte-p3z4zo" data-svelte-h="svelte-qj3n8p"></div> <div class="p svelte-p3z4zo" data-svelte-h="svelte-7vmhmc">Szerver oldal (+page.server.js):<br></div> <div class="code svelte-p3z4zo"><div class="codein svelte-p3z4zo"><div class="svelte-1vh31p0" style="overflow-x: auto;"><table class="svelte-1vh31p0"><tbody class="hljs"> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">1</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START --><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-title function_">load</span> = (<span class="hljs-params">{locals}</span>) =&gt; {<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">2</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->    <span class="hljs-keyword">return</span> {<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">3</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->        ...<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">4</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->    }<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">5</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->}<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">6</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START --><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> actions = {<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">7</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->    <span class="hljs-attr">default</span>: <span class="hljs-title function_">async</span> ({ locals, request }) =&gt; {<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">8</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->        ...<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">9</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->    }<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">10</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->}<!-- HTML_TAG_END --></code></pre> </td> </tr></tbody></table> </div></div></div> </div> 
+			
+			<script>
+				{
+					__sveltekit_1ctecmp = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						assets: "/frontend2425"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.BZ51a76U.js"),
+						import("../_app/immutable/entry/app.DPGcI1yy.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 10],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
