@@ -17,12 +17,13 @@
     return {
         ...
     }
-}
+} // Read it in +page.svelte: let { data } = $props()
 export const actions = {
     default: async ({ locals, request }) => {
         ...
     }
-}`}
+} // Send data from +page.svelte: <form method="post" ...`
+}
                 let:highlighted
             >
                 <LineNumbers {highlighted} />
