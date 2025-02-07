@@ -59,7 +59,7 @@ onMount(async () => {
                 language={javascript}
                 code={`async () => { //Svelte eseménybe pl.: on:click={async () => { ...
   ...
-  const rawResponse = await fetch('http://localhost:3000/post/', {
+  const answer = await fetch('http://localhost:3000/post/', {
     method: 'POST', //v. PUT v. PATCH v. DELETE
     headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
     body: JSON.stringify({a: 1, b: 'Textual content'})
