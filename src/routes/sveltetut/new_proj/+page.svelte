@@ -5,7 +5,7 @@
 </script>
 
 <div class="cont">
-    <div class="p">Projekt létrehozása:</div>
+    <div class="p">Vite (Front-end) projekt létrehozása:</div>
     <Highlight
         language={bash}
         code={`npm create vite

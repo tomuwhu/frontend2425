@@ -2,9 +2,9 @@
   import { page } from "$app/stores";
   $: currentRoute = $page.url.pathname;
   const menu = [
-    { name: "Új projekt", href: "/frontend2425/sveltetut/new_proj" },
-    { name: "Load / Actions", href: "/frontend2425/sveltetut/sveltekit_load" },
+    { name: "Vite - Új projekt", href: "/frontend2425/sveltetut/new_proj" },
     { name: "REST API", href: "/frontend2425/sveltetut/rest_api" },
+    { name: "SvelteKit + Load / Actions", href: "/frontend2425/sveltetut/sveltekit_load" },
   ];
 </script>
 

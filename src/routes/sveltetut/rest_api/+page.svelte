@@ -63,8 +63,7 @@ onMount(async () => {
     method: 'POST', //v. PUT v. PATCH v. DELETE
     headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
     body: JSON.stringify({a: 1, b: 'Textual content'})
-  })
-  let answer = await rawResponse.json()
+  }).then(v => v.json())
   console.log(answer)
   ...
 }`}
@@ -74,17 +73,28 @@ onMount(async () => {
             </Highlight>
         </div>
     </div>
-    <div class="p">SVELTEKIT Server API (+server.js):<br /></div>
+    <div class="p">Express Server API:<br /></div>
     <div class="code">
         <div class="codein">
             <Highlight
                 language={javascript}
-                code={`import { json } from '@sveltejs/kit';
+                code={`import express from 'express'
+import cors from 'cors'
+const app = express()
 
-export const POST = async ({ request }) => {
-    console.log(await request.json())
-    return json({ animal: 'Cat', message: 'MEOW', method: 'POST' });
-};`}
+app.use(express.json())
+app.use(cors())
+
+app.post('/', (req, res) => {
+    console.log(req.body)
+    res.send(JSON.stringify({x: 1, y: 2}))
+})
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(3000)`}
                 let:highlighted
             >
                 <LineNumbers {highlighted} />

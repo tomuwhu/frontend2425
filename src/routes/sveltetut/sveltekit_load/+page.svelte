@@ -1,28 +1,55 @@
 <script>
     import Highlight, { LineNumbers } from "svelte-highlight";
     import javascript from "svelte-highlight/languages/javascript";
+    import bash from "svelte-highlight/languages/bash";
 </script>
 
 <div class="cont">
-    <div class="p">SvelteKit Load / Actions<br /></div>
-        <div class="p2">
-
-    </div>
-    <div class="p">Szerver oldal (+page.server.js):<br /></div>
+    <div class="p">SvelteKit (FullStack) projekt létrehozása:</div>
+    <Highlight
+        language={bash}
+        code={`npx sv create
+# Ajánlott add-ons: drizzle, lucia
+cd <myproject> #projekt könyvtár kiválasztása
+code . #vscode elindítása
+npm run dev`}
+    ></Highlight>
+    <div class="p">SvelteKit Load / Actions (+page.server.js)<br /></div>
     <div class="code">
         <div class="codein">
             <Highlight
                 language={javascript}
-                code={`export const load = ({locals}) => {
+                code={`
+// szerver => frontend
+export const load = ({locals}) => {
     return {
         ...
     }
 } // Read it in +page.svelte: let { data } = $props()
+
+// frontend => szerver
 export const actions = {
     default: async ({ locals, request }) => {
         ...
     }
 } // Send data from +page.svelte: <form method="post" ...`
+}
+                let:highlighted
+            >
+                <LineNumbers {highlighted} />
+            </Highlight>
+        </div>
+    </div>
+    <div class="p">SvelteKit API (+server.js)<br /></div>
+    <div class="code">
+        <div class="codein">
+            <Highlight
+                language={javascript}
+                code={`import { json } from '@sveltejs/kit';
+export const POST = async ({ request }) => {
+    console.log(await request.json())
+    return json({ ... })
+};`
 }
                 let:highlighted
             >
