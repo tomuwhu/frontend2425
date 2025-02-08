@@ -20,7 +20,7 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-app.post('/', (req, res) => {
+app.post('/post', (req, res) => {
     console.log(req.body)
     res.send(JSON.stringify({x: 1, y: 2}))
 })
