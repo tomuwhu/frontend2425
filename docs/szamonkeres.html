@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="./_app/immutable/assets/11.DKiq8Bh4.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/javascript.BsZ23rxg.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.BsyHQVRW.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.Dm4ue-Av.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.BBYLFFrh.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.TFJA4j1U.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.Bz4zfSzi.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.CA90V0n4.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/each.D6YF6ztN.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores.B2NdJkHh.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/11.BLWB3gIP.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/javascript.DTTPHHew.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/bash.CiiqfXL8.js"><!-- HEAD_svelte-t3f3cu_START --><!-- HTML_TAG_START --><style>pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{color:#abb2bf;background:#282c34}.hljs-comment,
+.hljs-quote{color:#5c6370;font-style:italic}.hljs-doctag,
+.hljs-keyword,
+.hljs-formula{color:#c678dd}.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst{color:#e06c75}.hljs-literal{color:#56b6c2}.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta .hljs-string{color:#98c379}.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number{color:#d19a66}.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title{color:#61aeee}.hljs-built_in,
+.hljs-title.class_,
+.hljs-class .hljs-title{color:#e6c07b}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:bold}.hljs-link{text-decoration:underline}</style><!-- HTML_TAG_END --><style data-svelte-h="svelte-uwvo65">a {
+            all: unset;
+            cursor: pointer;
+        }
+        a:hover {
+            background-color: gray;
+        }
+        body {
+            margin: 0px;
+            background-color: #d5e4f3;
+        }
+        a.menu {
+            padding: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 0px;
+            white-space: nowrap;
+            color: white;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        a.menu.selected {
+            background-color: #d5e4f3;
+            color: black;
+            cursor: default;
+        }
+        a.menu:hover {
+            background-color: rgb(85, 107, 99);
+        }
+        a.menu.selected:hover {
+            background-color: #d5e4f3;
+            color: black;
+        }
+        menu {
+            margin: 0px;
+            background-color: black;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        h1 {
+            text-align: center;
+            color: rgb(8, 92, 98);
+            text-shadow: 1px 1px 3px gray;
+            margin-top: 0px;
+            font-size: 20px;
+        }</style><!-- HEAD_svelte-t3f3cu_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">   <menu><a class="menu norm" href="/frontend2425/peldaprog">Példaprogramok</a><a class="menu norm" href="/frontend2425/sveltetut/new_proj">Tananyag</a><a class="menu norm" href="/frontend2425/portfolio">Portfólió követelmények</a><a class="menu norm" href="/frontend2425/tematika">Frontend tematika</a></menu> <h1 class="svelte-1hphzp2" data-svelte-h="svelte-jdiiq9">Frontend számonkérés: Céges leltárptogram implementációja</h1> <div class="cont svelte-1hphzp2"><div class="pl svelte-1hphzp2" data-svelte-h="svelte-1h5nrfy"><span>1. feladat: </span>Projekt létrehozása, config beállítása, projekt elindítása, <a href="https://cdnjs.com/libraries/semantic-ui" target="_blank">ui beállítása</a>, projekt publikálása</div>  <pre data-language="bash" class=" svelte-1w9vok"><code class="hljs"><!-- HTML_TAG_START -->npx sv create <span class="hljs-comment"># &quot;szamonkeres&quot;, &#x27;SvelteKit minimal&#x27;, &#x27;No&#x27;, &#x27;drizzle + lucia&#x27;, &#x27;SQLite&#x27;, &#x27;better-sqlite3&#x27;, &#x27;Yes&#x27;, &#x27;npm&#x27;</span>
+<span class="hljs-built_in">cd</span> szamonkeres
+git init &amp;&amp; git add -A &amp;&amp; git commit -m <span class="hljs-string">&quot;Initial commit&quot;</span>
+code .<!-- HTML_TAG_END --></code></pre>  <div class="pl svelte-1hphzp2" data-svelte-h="svelte-55bhko">2. feladat: Adatstruktúra létrehozása</div> <br> <div class="code svelte-1hphzp2"><div class="codein svelte-1hphzp2"><div class="svelte-1vh31p0" style="overflow-x: auto;"><table class="svelte-1vh31p0"><tbody class="hljs"> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">1</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START --><span class="hljs-comment">//src/lib/server/db/schema.js:</span><!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">2</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START --><span class="hljs-keyword">import</span> { sqliteTable, text, integer } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;drizzle-orm/sqlite-core&#x27;</span><!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">3</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->
+<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">4</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START --><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> user = <span class="hljs-title function_">sqliteTable</span>(<span class="hljs-string">&#x27;user&#x27;</span>, {<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">5</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->    <span class="hljs-attr">id</span>: <span class="hljs-title function_">text</span>(<span class="hljs-string">&#x27;id&#x27;</span>).<span class="hljs-title function_">primaryKey</span>(),<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">6</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->    <span class="hljs-attr">name</span>: <span class="hljs-title function_">text</span>(<span class="hljs-string">&#x27;username&#x27;</span>).<span class="hljs-title function_">notNull</span>(), <span class="hljs-comment">// &#x27;age&#x27; mező helyett &#x27;name&#x27; mező, &#x27;text&#x27;</span><!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">7</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->    <span class="hljs-attr">username</span>: <span class="hljs-title function_">text</span>(<span class="hljs-string">&#x27;username&#x27;</span>).<span class="hljs-title function_">notNull</span>().<span class="hljs-title function_">unique</span>(),<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">8</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->    <span class="hljs-attr">passwordHash</span>: <span class="hljs-title function_">text</span>(<span class="hljs-string">&#x27;password_hash&#x27;</span>).<span class="hljs-title function_">notNull</span>()<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">9</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->})<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">10</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->
+<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">11</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START --><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> session = <span class="hljs-title function_">sqliteTable</span>(<span class="hljs-string">&quot;session&quot;</span>, {<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">12</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->    <span class="hljs-attr">id</span>: <span class="hljs-title function_">text</span>(<span class="hljs-string">&#x27;id&#x27;</span>).<span class="hljs-title function_">primaryKey</span>(),<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">13</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->    <span class="hljs-attr">userId</span>: <span class="hljs-title function_">text</span>(<span class="hljs-string">&#x27;user_id&#x27;</span>).<span class="hljs-title function_">notNull</span>().<span class="hljs-title function_">references</span>(<span class="hljs-function">() =&gt;</span> user.<span class="hljs-property">id</span>),<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">14</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->    <span class="hljs-attr">expiresAt</span>: <span class="hljs-title function_">integer</span>(<span class="hljs-string">&#x27;expires_at&#x27;</span>, { <span class="hljs-attr">mode</span>: <span class="hljs-string">&#x27;timestamp&#x27;</span> }).<span class="hljs-title function_">notNull</span>()<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">15</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->})<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">16</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->
+<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">17</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START --><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> tools = <span class="hljs-title function_">sqliteTable</span>(<span class="hljs-string">&quot;tools&quot;</span>, {<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">18</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->    <span class="hljs-attr">id</span>: <span class="hljs-title function_">text</span>(<span class="hljs-string">&#x27;id&#x27;</span>).<span class="hljs-title function_">primaryKey</span>(),<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">19</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->    <span class="hljs-attr">title</span>: <span class="hljs-title function_">text</span>(<span class="hljs-string">&#x27;title&#x27;</span>).<span class="hljs-title function_">notNull</span>(),<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">20</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->    <span class="hljs-attr">description</span>: <span class="hljs-title function_">text</span>(<span class="hljs-string">&#x27;description&#x27;</span>).<span class="hljs-title function_">notNull</span>(),<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">21</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->    <span class="hljs-attr">image</span>: <span class="hljs-title function_">text</span>(<span class="hljs-string">&#x27;image&#x27;</span>).<span class="hljs-title function_">notNull</span>(),<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">22</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->    <span class="hljs-attr">serialnum</span>: <span class="hljs-title function_">text</span>(<span class="hljs-string">&#x27;link&#x27;</span>).<span class="hljs-title function_">notNull</span>(),<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">23</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->    <span class="hljs-attr">user_id</span>: <span class="hljs-title function_">text</span>(<span class="hljs-string">&#x27;user_id&#x27;</span>).<span class="hljs-title function_">notNull</span>().<span class="hljs-title function_">references</span>(<span class="hljs-function">() =&gt;</span> user.<span class="hljs-property">id</span>),<!-- HTML_TAG_END --></code></pre> </td> </tr> <tr class="svelte-1vh31p0"><td class="svelte-1vh31p0 hljs" style="position: sticky; left: 0; text-align: right; user-select: none; width: 24px;"><code class="svelte-1vh31p0" style="color: var(--line-number-color, currentColor);">24</code> </td> <td class="svelte-1vh31p0"><pre class="svelte-1vh31p0"><code><!-- HTML_TAG_START -->})<!-- HTML_TAG_END --></code></pre> </td> </tr></tbody></table> </div></div> </div> <pre data-language="bash" class=" svelte-1w9vok"><code class="hljs"><!-- HTML_TAG_START -->npm run db:push<!-- HTML_TAG_END --></code></pre>  <div class="pl svelte-1hphzp2" data-svelte-h="svelte-1lrq6io">3. Projekt elindítása fejlesztés közben teszteléshez.</div>  <pre data-language="bash" class=" svelte-1w9vok"><code class="hljs"><!-- HTML_TAG_START -->npm run dev -- --open<!-- HTML_TAG_END --></code></pre>  <div class="pl svelte-1hphzp2" data-svelte-h="svelte-1t3py8p">4. További önálló feladatok:<ul class="svelte-1hphzp2"><li class="svelte-1hphzp2">menü készítése, Regisztrációs űrlap szükséges módosítása, </li><li class="svelte-1hphzp2">CRUD alkalmazás készítése az eszközök felviteléhez és userek hozzárendeléséhez,</li><li class="svelte-1hphzp2">különböző nézetek készítése eszközök és melyi kinél van, userek és kinél milyen eszköz van, statisztika nézet.</li></ul></div> </div> 
+			
+			<script>
+				{
+					__sveltekit_1nk853p = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						assets: "/frontend2425"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.BsyHQVRW.js"),
+						import("./_app/immutable/entry/app.TFJA4j1U.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 11],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
