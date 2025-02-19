@@ -6,7 +6,7 @@
         [9985, 10174]
     ]
 </script>
-<h1>Karakterek</h1>
+<h1><a href="https://gyakg.es6.eu/Brython/utf-8_list.html" target="_blank">UFT-8</a> karakterek</h1>
 <div class="sample">
 {#each charlist as char}
     <span>{char}</span>
@@ -21,6 +21,15 @@
     </div>
 {/each}
 <style>
+    a {
+        text-decoration: none;
+        color: rgb(46, 129, 120);
+    }
+    a:hover {
+        color: rgb(86, 86, 42);
+        text-decoration: underline;
+        background-color: transparent;
+    }
     @import url('https://pvinis.github.io/iosevka-webfont/3.4.1/iosevka.css');
     .sample {
         font-family: "Iosevka", monospace;
