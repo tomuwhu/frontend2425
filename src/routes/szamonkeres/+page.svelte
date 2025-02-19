@@ -8,7 +8,7 @@
     <div class="pl"><span>1. feladat: </span
         >Projekt létrehozása, config beállítása, projekt elindítása, <a
          href="https://cdnjs.com/libraries/semantic-ui" target="_blank"
-    >ui beállítása</a>, projekt publikálása</div>
+    >ui beállítása</a>, projekt publikálása.</div>
     <Highlight
         language={bash}
         code={`npx sv create # "szamonkeres", 'SvelteKit minimal', 'No', 'drizzle + lucia', 'SQLite', 'better-sqlite3', 'Yes', 'npm'
@@ -16,7 +16,7 @@ cd szamonkeres
 git init && git add -A && git commit -m "Initial commit"
 code .`}
     ></Highlight>
-    <div class="pl">2. feladat: Adatstruktúra létrehozása</div>
+    <div class="pl">2. feladat: Adatstruktúra és adatbázis létrehozása.</div>
     <br />
     <div class="code"> 
         <div class="codein">
@@ -55,12 +55,15 @@ export const tools = sqliteTable("tools", {
     language={bash}
     code={`npm run db:push`}
     ></Highlight>
-    <div class="pl">3. Projekt elindítása fejlesztés közben teszteléshez.</div>
+    <div class="pl">3. Projekt elindítása fejlesztés közbeni teszteléshez.</div>
     <Highlight language={bash} code={`npm run dev -- --open`}></Highlight>
     <div class="pl">4. További önálló feladatok:<ul><li
-        >menü készítése, Regisztrációs űrlap szükséges módosítása, </li><li
-        >CRUD alkalmazás készítése az eszközök felviteléhez és userek hozzárendeléséhez,</li><li
-        >különböző nézetek készítése eszközök és melyi kinél van, userek és kinél milyen eszköz van, statisztika nézet.</li></ul></div>
+        >menü készítése, Regisztrációs űrlap szükséges módosítása a <a href='https://github.com/tomuwhu/szamonkeres'>(minta)</a> szerint,</li><li
+        >CRUD alkalmazás készítése az eszközök felviteléhez és userek hozzárendeléséhez, kereső funkció,</li><li
+        >különböző nézetek készítése: 
+    - eszközök és az, hogy melyik eszköz kinél van, 
+    - userek és az, hogy kinél milyen eszköz van,
+    - statisztika nézet.</li></ul></div>
 </div>
 
 <style>
