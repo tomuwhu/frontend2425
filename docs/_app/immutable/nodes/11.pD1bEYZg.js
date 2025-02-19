@@ -6,7 +6,7 @@ import { sqliteTable, text, integer } from 'drizzle-orm/sqlite-core'
 
 export const user = sqliteTable('user', {
     id: text('id').primaryKey(),
-    name: text('username').notNull(), // 'age' mező helyett 'name' mező, 'text'
+    name: text('name').notNull(), // 'age' mező helyett 'name' mező, 'text'
     username: text('username').notNull().unique(),
     passwordHash: text('password_hash').notNull()
 })
