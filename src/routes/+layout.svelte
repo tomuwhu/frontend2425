@@ -13,7 +13,9 @@
             href: "/frontend2425/sveltetut/new_proj"
         },
         { name: "Portfólió követelmények", href: "/frontend2425/portfolio" },
-        { name: "Frontend tematika", href: "/frontend2425/tematika" }
+        { name: "Frontend tematika", href: "/frontend2425/tematika" },
+        { name: "Számonkérés", href: "/frontend2425/szamonkeres" },
+        { name: "UTF-8 Karakterek válogatás", href: "/frontend2425/" },
     ]
 </script>
 
