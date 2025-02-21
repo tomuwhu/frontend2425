@@ -59,11 +59,11 @@ export const tools = sqliteTable("tools", {
     <Highlight language={bash} code={`npm run dev -- --open`}></Highlight>
     <div class="pl">4. További önálló feladatok:<ul><li
         >menü készítése, Regisztrációs űrlap szükséges módosítása a <a href='https://github.com/tomuwhu/szamonkeres'>(minta)</a> szerint,</li><li
-        >CRUD alkalmazás készítése az eszközök felviteléhez és userek hozzárendeléséhez, kereső funkció,</li><li
+        >CRUD alkalmazás készítése az eszközök felviteléhez és userek hozzárendeléséhez</li><li
         >különböző nézetek készítése: 
     - eszközök és az, hogy melyik eszköz kinél van, 
     - userek és az, hogy kinél milyen eszköz van,
-    - statisztika nézet.</li></ul></div>
+    - statisztika nézet, kereső funkció.</li></ul></div>
 </div>
 
 <style>
