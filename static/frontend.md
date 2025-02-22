@@ -5,9 +5,9 @@
 - github regisztráció
 - git telepítés
 - git beállítása
-  - git init, clone, add, commit, push, pull
-  - .gitignore
-- GitHub Desktop
+- git init, clone, add, commit, push, pull,
+- git pull --rebase,
+- .gitignore
 - index.html, README.md
 - Beállítások, GitHub Pages
 - Domain beállítások
@@ -59,7 +59,7 @@
 - Külső CSS/JS könyvtárak és egyebek
   - [Google Fonts](https://fonts.google.com/)
   - [Bootstrap](https://getbootstrap.com/)
-  - [Materialize](https://materializecss.com/)
+  - [Semantic UI](https://semantic-ui.com/)
 - SVG formátum, SVG használata HTML-ben
 - CSS Transform
 - CSS Animációk
@@ -69,8 +69,6 @@
 - JavaScript online editor
   - [Vanilla](https://playcode.io/javascript)
   - [JQuery](https://playcode.io/jquery)
-  - [React](https://playcode.io/react)
-  - [Vue](https://playcode.io/vue)
   - [Svelte](https://playcode.io/svelte)
 
 ## JavaScript/TypeScript/Svelte (Browser JS)
@@ -211,9 +209,7 @@
 - DOMParser
 - Modulok, CDN
   - [jQuery](https://jquery.com/)
-  - [Axios](https://axios-http.com/docs/intro), RestAPI
   - [Google Sheets Parser](https://www.npmjs.com/package/public-google-sheets-parser)
-  - [Socket.io<sup>*</sup>](https://socket.io/)
   - [levenshtein](https://github.com/gf3/Levenshtein)
   - [marked](https://marked.js.org/)
   - [highlight.js](https://highlightjs.org/) v. [prism.js](https://prismjs.com/)
@@ -265,89 +261,43 @@
   - interval
   - rotationRate
 
-## JQuery, JQuery UI
-
-- HTML
-- JavaScript
-- Options
-- Metódusok
-- Események
-- Styílusok
-- Interakciók
-- Widgetek
-- Effektek
-- Eszközök
-
-## JQuery Mobile
-
-- ThemeRoller
-- Eszközök
-
 ## NodeJS frontend
 
-## [Svelte](https://svelte.dev/docs/introduction)
+## [Vite](https://vite.dev/)
 
-- [Tutorial](https://learn.svelte.dev/tutorial/welcome-to-svelte)
-- [Examples, Játszótér](https://svelte.dev/examples/hello-world)
-- Svelte komponensek
-  - export prop
-  - reactivitás, számított változók
-  - state management, store
-  - style :global
-- Logikai blokkok (#if, #each, #await, #key)
-  - speciális elemek (@html, @debug, @const)
-- Direktívák
-  - on:__, bind:__, class:__, style:__
-  - use:__, transition:__, animate:__
+- CLI
+- Plugins
+- DevServer, Build, Static, API
+
+## [SvelteKit](https://svelte.dev/docs/svelte/overview)
+
+- [Tutorial](https://svelte.dev/tutorial/svelte/welcome-to-svelte)
+- [Examples, Játszótér](https://svelte.dev/playground/hello-world?version=5.20.2)
+- Runes
+- Template syntax (#if, #each, #await, #key)
+  - speciális elemek (@render, @html, @debug, @const)
 - Svelte runtime
-  - onMount, beforeUpdate, afterUpdate, onDestroy, tick
+  - onMount, beforeUpdate, afterUpdate, afterNavigate
   - setContext, getContext, hasContext, getAllContexts
   - createEventDispatcher
 - Svelte Store
 - Motion, Transition, Animation
 - Svelte Prepocessors: SASS, PUG, TypeScript, ...
 
-## [SvelteUI](https://svelteui.dev/theming/dark-theme) / [Flowbite Svelte](https://flowbite-svelte.com/)
-- Telepítés
-- Funkciók
-- Beállítás
-- Tartalom
-- Űrlapok
-- Komponensek
-- Egyéb UI könyvtárak
-  - [SVELTESTRAP](https://sveltestrap.js.org/?path=/docs/sveltestrap-overview--docs)
-  - [Svelte Material UI](https://sveltematerialui.com/)
-  - [Svelte Headless UI](https://svelte-headlessui.goss.io/docs/2.0)
-  - [Attractions](https://illright.github.io/attractions/)
+## Drizzle
 
-## FrontEnd: VUE, React, Angular
+- config
+- schema files
+- db:push
+- MySQL
+- SQLite
 
-- [Vue.js Tutorial](https://vuejs.org/tutorial/)
-- [Vue.js Documentáció](https://vuejs.org/guide/introduction.html)
-- [Vue-CLI](https://cli.vuejs.org/guide/)
-- [React Tutorial](https://react.dev/learn)
-- [React Documentáció](https://react.dev/reference/react)
-- React/VUE UI
-  - [React Material UI](https://mui.com/)
-  - [BootstrapVue](https://bootstrap-vue.org/)
-  - [Vue Material UI](https://www.creative-tim.com/vuematerial/)
-- [Angular](https://angular.io)
-	- [Angular Material](https://material.angular.io/)
+## Lucia
 
-## FrontEnd Python: Brython
+- sessions
+- user tábla módosítása
 
-- python ismétlés backend tárgyban
-- browser
-- html
-- bind
-- axios
-
-## PHP on frontend: [Inertia-js](https://laracasts.com/series/build-modern-laravel-apps-using-inertia-js)
-
-- VUE Ismétlés
-- komponensek
-- változók
-- változó hozzárendelése HTML objektumhoz (binding)
+## SvelteKit Deployment: Github - Netlify - Aiven
 
 ## Integrációs tesztelés
 
@@ -383,5 +333,5 @@
 1. GIT/VSCode beállítása, használata + HTML/CSS/JS + GitGub Deploy
 2. JavaScript/JQuery/Angular/Vue/Svelte (Static FrontEnd GitGub Deploy)
 3. Ajax MVC FullStack alkalmazásfejlesztés és Deploying
-- (Nuxt/SvelteKit/Laravel + MySQL/MongoDB)
+- (SvelteKit + MySQL/SQLite)
 
