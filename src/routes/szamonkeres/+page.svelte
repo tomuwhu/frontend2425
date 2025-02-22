@@ -39,7 +39,7 @@ export const session = sqliteTable("session", {
 })
 
 export const tools = sqliteTable("tools", {
-    id: text('id').primaryKey(),
+    id: integer('id').primaryKey(),
     title: text('title').notNull(),
     description: text('description').notNull(),
     image: text('image').notNull(),
@@ -59,7 +59,7 @@ export const tools = sqliteTable("tools", {
     <Highlight language={bash} code={`npm run dev -- --open`}></Highlight>
     <div class="pl">4. További önálló feladatok:<ul><li
         >menü készítése, Regisztrációs űrlap szükséges módosítása a <a href='https://github.com/tomuwhu/szamonkeres'>(minta)</a> szerint,</li><li
-        >CRUD alkalmazás készítése az eszközök felviteléhez és userek hozzárendeléséhez</li><li
+        >CRUD alkalmazás készítése az eszközök felviteléhez és userek hozzárendeléséhez,</li><li
         >különböző nézetek készítése: 
     - eszközök és az, hogy melyik eszköz kinél van, 
     - userek és az, hogy kinél milyen eszköz van,
