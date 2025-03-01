@@ -1,5 +1,7 @@
 # Frontend alkalmazásfejlesztés tematika
 
+## [Basic Concepts](https://www.youtube.com/watch?v=lkIFF4maKMU)
+
 ## [![Logók](https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png)](https://github.com/logos)
 
 - github regisztráció
