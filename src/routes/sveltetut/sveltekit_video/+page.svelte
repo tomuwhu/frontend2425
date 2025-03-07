@@ -8,6 +8,8 @@
   <a target="_blank" href="https://www.youtube.com/watch?v=Rx4jCz5GHv4">Kijelentkezés űrlap módosítása</a><br>
   <a target="_blank" href="https://www.youtube.com/watch?v=h9HquUZ5Dao">Regisztrációs űrlap módosítása, adat küldése szerverre</a><br>
   <a target="_blank" href="https://www.youtube.com/watch?v=4g_0UhqqYWk">Routing, Layout, Menü készítése</a><br>
+  <a target="_blank" href="https://youtu.be/CmH9MG5u9o4">Aktív menü megjelenítése ($page.url.pathname)</a><br>
+  <a class="repo" target="_blank" href="https://github.com/tomuwhu/felvetel">Elkészült repo a GitHubon</a>
 </div>
 <style>
   div.p2 {
@@ -36,5 +38,8 @@
   a:hover {
     background-color: rgb(215, 250, 246);
     color: red;
+  }
+  a.repo {
+    background-color: rgb(181, 255, 181);
   }
 </style>
