@@ -7,6 +7,7 @@
   <a target="_blank" href="https://www.youtube.com/watch?v=SzhkYpVvL9w">Hooks Információk kinyerése szerver oldalon</a><br>
   <a target="_blank" href="https://www.youtube.com/watch?v=Rx4jCz5GHv4">Kijelentkezés űrlap módosítása</a><br>
   <a target="_blank" href="https://www.youtube.com/watch?v=h9HquUZ5Dao">Regisztrációs űrlap módosítása, adat küldése szerverre</a><br>
+  <a target="_blank" href="https://www.youtube.com/watch?v=4g_0UhqqYWk">Routing, Layout, Menü készítése</a><br>
 </div>
 <style>
   div.ac {
