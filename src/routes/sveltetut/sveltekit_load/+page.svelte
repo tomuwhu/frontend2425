@@ -30,7 +30,8 @@ export const load = ({locals}) => {
 // frontend => szerver
 export const actions = {
     default: async ({ locals, request }) => {
-        ...
+        const formData = await event.request.formData();
+        const ... = formData.get('...'); // form input name
     }
 } // Send data from +page.svelte: <form method="post" ...`
 }
@@ -67,24 +68,6 @@ export const POST = async ({ request }) => {
         background-color: rgb(10, 62, 62);
         border: solid 9px rgb(19, 82, 60);
         box-shadow: 0px 0px 3px inset white;
-    }
-    div.p2 {
-        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-        white-space: pre-wrap;
-        font-size: 14px;
-        color:rgb(87, 142, 181);
-    }
-    div.p2 table {
-        border-radius: 15px;
-        border: solid 14px rgb(135, 173, 163);
-        border-spacing: 5px;
-        background-color: rgb(253, 255, 240);
-        box-shadow: 1px 1px 4px inset black;
-    }
-    div.p2 table tr td {
-        vertical-align: top;
-        min-width: 10px;
     }
     div.p {
         font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",

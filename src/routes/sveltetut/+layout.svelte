@@ -5,6 +5,7 @@
     { name: "Vite - Új projekt", href: "/frontend2425/sveltetut/new_proj" },
     { name: "REST API", href: "/frontend2425/sveltetut/rest_api" },
     { name: "SvelteKit + Load / Actions", href: "/frontend2425/sveltetut/sveltekit_load" },
+    { name: "SvelteKit/Drizzle/Lucia/Turso", href: "/frontend2425/sveltetut/turso" },
     { name: "SvelteKit FullStack Video tananyag", href: "/frontend2425/sveltetut/sveltekit_video" },
   ];
 </script>

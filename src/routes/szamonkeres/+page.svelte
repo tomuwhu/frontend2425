@@ -77,9 +77,6 @@ export const tools = sqliteTable("tools", {
         margin: 0px;
         margin-left:40px;
     }
-    i {
-        color: rgb(86, 86, 42);
-    }
     h1 {
         padding: 10px;
         font-size: 23px;    
@@ -101,15 +98,6 @@ export const tools = sqliteTable("tools", {
         color: rgb(37, 104, 123);
         box-shadow: 1px 1px 3px inset gray;
         background-color: rgb(215, 249, 250);
-    }
-    div.p {
-        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-        text-shadow: 1px 1px 3px gray;
-        text-align: center;
-        display: block;
-        white-space: pre;
-        color: rgb(37, 104, 123);
     }
     div.cont {
         margin: 10px;
