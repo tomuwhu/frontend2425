@@ -156,6 +156,14 @@
 			theme: '<a href="https://vite.new/svelte" target="_blank">Vite-Svelte</a> Snake Game',
 			source: 'https://github.com/tomuwhu/kigyo/tree/main/src',
 			online: 'https://tomuwhu.github.io/kigyo/'
+		},
+    {
+			id: 17,
+			sz: ['Nappali tagozat'],
+			date: '2025.03.12.',
+			theme: 'SvelteKit with Turso, Lucia and Drizzle',
+			source: 'https://github.com/tomuwhu/turso',
+			online: 'https://sveltekitwithturso.netlify.app/'
 		}
   ];
 </script>
