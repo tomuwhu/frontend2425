@@ -171,10 +171,6 @@
 <div class="cont">
   <h1 class="kh1">Szakképzési oldal 2024/25</h1>
   <hr />
-  <a class="x" href="https://discord.gg/q4G2k479Zw" target="_blank"
-    >Discord Server Invite: q4G2k479Zw</a
-  >
-  <hr />
   <table id="t0">
     <td>
       <table id="t1">
@@ -197,23 +193,12 @@
         {/each}
       </table>
     </td>
-    <td style="width:20px; height: 300px;">
-      <div class="id">
-        <input type="range" orient="vertical" />
-      </div>
-    </td>
   </table>
 </div>
 
 <style>
   .id {
     height: 100%;
-  }
-  input[type="range"][orient="vertical"] {
-    position: relative;
-    appearance: slider-vertical;
-    width: 16px;
-    height: 70px;
   }
   div.cont {
     text-align: center;
@@ -259,20 +244,5 @@
   td.i1:hover,
   td.i2:hover {
     text-shadow: 1px 1px 4px black;
-  }
-  a.x {
-    text-decoration: none;
-    padding: 3px;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin: 3px;
-    width: 200px;
-    border-radius: 6px;
-    background-color: #a9cedb;
-    text-decoration: none;
-  }
-  a.x:hover {
-    background-color: #a9dbd4;
-    border: solid 3px rgb(159, 69, 69);
   }
 </style>
